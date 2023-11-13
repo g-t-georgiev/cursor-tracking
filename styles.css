@@ -1,0 +1,31 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10vw;
+    background-color: rgba(0 0 0 / 1);
+}
+
+.target {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 4 / 1;
+    border: 2px solid rgba(0 255 0 / 1);
+}
+
+.arrow {
+    font-size: 0;
+    transform: rotateZ(calc(var(--rotate, 0) * 1deg));
+    transform-origin: center;
+}
